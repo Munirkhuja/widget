@@ -1,0 +1,28 @@
+{
+    "widget": {
+        "name": "widget.name",
+        "description": "widget.description",
+        "short_description": "widget.short_description",
+        "version": "1.0",
+        "interface_version": 2,
+        "init_once": true,
+        "locale": [
+            "ru"
+        ],
+        "installation": true,
+        "support": {
+            "link": "https://www.amocrm.com",
+            "email": "support@amocrm.com"
+        }
+    },
+    "locations": [
+        "widget_page",  "ccard-1", "clist-0", "lcard-1", "llist-0", "cucard-1", "culist-0", "lead_sources", "settings"
+    ],
+    "settings":{
+        "phone": {
+            "name": "settings.phone",
+            "type": "text",
+            "required": true
+        }
+    }
+}
