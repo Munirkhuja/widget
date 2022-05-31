@@ -7,16 +7,17 @@ use Illuminate\Http\Request;
 
 class LeadPipelinneColumnController extends Controller
 {
-    public function index($account_id,$pipeline_id)
+    public function index($account_id, $pipeline_id)
     {
-        return LeadPipelineColumn::where('pipeline_id',$pipeline_id)->where('account_id',$account_id)->first();
+        return LeadPipelineColumn::where('pipeline_id', $pipeline_id)->where('account_id', $account_id)->first();
     }
+
     public function set(Request $request)
     {
 
         LeadPipelineColumn::updateOrCreate(
-            ['pipeline_id'=>$request->pipeline_id,'account_id'=>$request->account_id],
-            ['columns_id'=>json_encode($request->columns_id)]
+            ['pipeline_id' => $request->pipeline_id, 'account_id' => $request->account_id],
+            ['columns_id' => json_encode($request->columns_id)]
         );
         return true;
     }

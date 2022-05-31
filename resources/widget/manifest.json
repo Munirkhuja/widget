@@ -15,10 +15,20 @@
             "email": "support@amocrm.com"
         }
     },
+    "settings": {
+        "login": {
+            "name": "settings.login",
+            "type": "text",
+            "required": false
+        },
+        "password": {
+            "name": "settings.password",
+            "type": "pass",
+            "required": false
+        }
+    },
     "locations": [
         "llist",
         "clist"
-    ],
-    "settings": {
-    }
+    ]
 }

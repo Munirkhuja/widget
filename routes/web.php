@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', [IndexController::class, 'index'])->name('index');
 //Route::middleware([CheckAmoAuthToken::class])->group(function() {
 //    Route::get('/', [IndexController::class, 'index'])->name('index');
 //});

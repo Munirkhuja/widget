@@ -9,16 +9,18 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function index(Request $request) {
+    public function index(Request $request)
+    {
         // текущий клиент
-        $client = Client::current();
+//        $client = Client::current();
 
         // пример запроса всех сделок
-        $leads = Amo::getLeads([]);
+//        $leads = Amo::getLeads([]);
 
-        return view('index', [
-            'client' => $client,
-            'leads' => $leads
-        ]);
+        return view('index');
+//        return view('index', [
+//            'client' => $client,
+//            'leads' => $leads
+//        ]);
     }
 }

@@ -4,7 +4,7 @@ define([
 ], function ($) {
     return function () {
         let self = this;
-        self.apiUrl = 'https://amowidget/api/';
+        self.apiUrl = 'https://munir.salesup.pro/api/';
         self.pipelineOption = [];
         self.columnHide = [];
         self.renderSelect = function () {
