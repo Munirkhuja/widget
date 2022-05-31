@@ -14,11 +14,9 @@ class LeadPipelinneColumnController extends Controller
 
     public function set(Request $request)
     {
-
-        LeadPipelineColumn::updateOrCreate(
+        return LeadPipelineColumn::updateOrCreate(
             ['pipeline_id' => $request->pipeline_id, 'account_id' => $request->account_id],
             ['columns_id' => json_encode($request->columns_id)]
         );
-        return true;
     }
 }

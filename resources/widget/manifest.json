@@ -16,15 +16,10 @@
         }
     },
     "settings": {
-        "login": {
-            "name": "settings.login",
+        "phone": {
+            "name": "settings.phone",
             "type": "text",
-            "required": false
-        },
-        "password": {
-            "name": "settings.password",
-            "type": "pass",
-            "required": false
+            "required": true
         }
     },
     "locations": [
