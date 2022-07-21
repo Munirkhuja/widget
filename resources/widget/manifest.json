@@ -11,18 +11,29 @@
         ],
         "installation": true,
         "support": {
-            "link": "https://www.amocrm.com",
-            "email": "support@amocrm.com"
+            "link": "https://sls-up.ru",
+            "email": "sales@sls-up.ru"
         }
     },
     "settings": {
+        "name": {
+            "name": "settings.name",
+            "type": "text",
+            "required": false
+        },
         "phone": {
             "name": "settings.phone",
             "type": "text",
-            "required": true
+            "required": false
+        },
+        "oferta": {
+            "name": "settings.oferta",
+            "type": "custom",
+            "required": false
         }
     },
     "locations": [
+        "settings",
         "llist",
         "clist"
     ]
